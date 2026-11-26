@@ -70,7 +70,7 @@ export const usePatientStore = create<PatientState>((set, get) => ({
       if (response.success && response.data) {
         set({ selectedPatient: response.data, loading: false });
       } else {
-        set({ error: response.error || 'Paciente não encontrado', loading: false });
+        set({ error: response.error || 'Paciente nêo encontrado', loading: false });
       }
     } catch (error) {
       set({ error: 'Erro ao carregar paciente', loading: false });

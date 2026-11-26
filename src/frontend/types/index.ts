@@ -16,7 +16,7 @@ export interface Patient {
   id: string;
   name: string;
   cpf: string;
-  cns?: string; // Cartão Nacional de Saúde
+  cns?: string; // Cartêo Nacional de Saúde
   birthDate: string;
   gender: 'M' | 'F' | 'Outro';
   phone: string;
@@ -109,7 +109,7 @@ export interface Consultation {
   diagnosis?: string;
   icd10?: string[];
 
-  // Prescrição
+  // Prescriçêo
   prescriptions?: Prescription[];
 
   // Exames solicitados

@@ -1,4 +1,4 @@
-// Serviços de API Mock para demonstração
+// Serviços de API Mock para demonstraçêo
 
 import {
   mockUsers,
@@ -39,7 +39,7 @@ export const authApi = {
     if (!user) {
       return {
         success: false,
-        error: 'Usuário não encontrado'
+        error: 'Usuário nêo encontrado'
       };
     }
 
@@ -87,7 +87,7 @@ export const patientsApi = {
       );
     }
 
-    // Paginação
+    // Paginaçêo
     const page = params?.page || 1;
     const pageSize = params?.pageSize || 10;
     const start = (page - 1) * pageSize;
@@ -114,7 +114,7 @@ export const patientsApi = {
     if (!patient) {
       return {
         success: false,
-        error: 'Paciente não encontrado'
+        error: 'Paciente nêo encontrado'
       };
     }
 
@@ -158,7 +158,7 @@ export const patientsApi = {
     if (index === -1) {
       return {
         success: false,
-        error: 'Paciente não encontrado'
+        error: 'Paciente nêo encontrado'
       };
     }
 
@@ -183,7 +183,7 @@ export const patientsApi = {
     if (index === -1) {
       return {
         success: false,
-        error: 'Paciente não encontrado'
+        error: 'Paciente nêo encontrado'
       };
     }
 
@@ -238,7 +238,7 @@ export const appointmentsApi = {
       return dateA.getTime() - dateB.getTime();
     });
 
-    // Paginação
+    // Paginaçêo
     const page = params?.page || 1;
     const pageSize = params?.pageSize || 20;
     const start = (page - 1) * pageSize;
@@ -265,7 +265,7 @@ export const appointmentsApi = {
     if (!appointment) {
       return {
         success: false,
-        error: 'Agendamento não encontrado'
+        error: 'Agendamento nêo encontrado'
       };
     }
 
@@ -302,7 +302,7 @@ export const appointmentsApi = {
     if (index === -1) {
       return {
         success: false,
-        error: 'Agendamento não encontrado'
+        error: 'Agendamento nêo encontrado'
       };
     }
 
@@ -327,7 +327,7 @@ export const appointmentsApi = {
     if (index === -1) {
       return {
         success: false,
-        error: 'Agendamento não encontrado'
+        error: 'Agendamento nêo encontrado'
       };
     }
 
@@ -347,7 +347,7 @@ export const appointmentsApi = {
     if (index === -1) {
       return {
         success: false,
-        error: 'Agendamento não encontrado'
+        error: 'Agendamento nêo encontrado'
       };
     }
 
@@ -402,7 +402,7 @@ export const consultationsApi = {
     if (!consultation) {
       return {
         success: false,
-        error: 'Consulta não encontrada'
+        error: 'Consulta nêo encontrada'
       };
     }
 
@@ -439,7 +439,7 @@ export const consultationsApi = {
     if (index === -1) {
       return {
         success: false,
-        error: 'Consulta não encontrada'
+        error: 'Consulta nêo encontrada'
       };
     }
 
@@ -464,7 +464,7 @@ export const consultationsApi = {
     if (index === -1) {
       return {
         success: false,
-        error: 'Consulta não encontrada'
+        error: 'Consulta nêo encontrada'
       };
     }
 

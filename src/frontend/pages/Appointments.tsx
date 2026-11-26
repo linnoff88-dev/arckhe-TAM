@@ -92,7 +92,7 @@ export default function Appointments() {
           `Agendamento de ${appointment?.patientName} foi cancelado`
         );
       } else {
-        toast.error('Erro ao cancelar', 'Não foi possível cancelar o agendamento');
+        toast.error('Erro ao cancelar', 'Nêo foi possível cancelar o agendamento');
       }
     }
   };
@@ -106,7 +106,7 @@ export default function Appointments() {
         `Agendamento de ${appointment?.patientName} confirmado para ${appointment?.time}`
       );
     } else {
-      toast.error('Erro ao confirmar', 'Não foi possível confirmar o agendamento');
+      toast.error('Erro ao confirmar', 'Nêo foi possível confirmar o agendamento');
     }
   };
 
@@ -149,7 +149,7 @@ export default function Appointments() {
     try {
       const patient = patients.find(p => p.id === formData.patientId);
       if (!patient) {
-        toast.error('Erro', 'Paciente não encontrado');
+        toast.error('Erro', 'Paciente nêo encontrado');
         return;
       }
 
@@ -177,7 +177,7 @@ export default function Appointments() {
         setShowNewModal(false);
         fetchAppointments();
       } else {
-        toast.error('Erro ao salvar', 'Não foi possível salvar o agendamento');
+        toast.error('Erro ao salvar', 'Nêo foi possível salvar o agendamento');
       }
     } catch (error) {
       toast.error('Erro ao salvar', 'Ocorreu um erro ao salvar o agendamento');
@@ -202,7 +202,7 @@ export default function Appointments() {
       in_progress: { bg: 'bg-blue-100', text: 'text-blue-700', label: 'Em Andamento' },
       completed: { bg: 'bg-purple-100', text: 'text-purple-700', label: 'Concluído' },
       cancelled: { bg: 'bg-red-100', text: 'text-red-700', label: 'Cancelado' },
-      no_show: { bg: 'bg-orange-100', text: 'text-orange-700', label: 'Não Compareceu' }
+      no_show: { bg: 'bg-orange-100', text: 'text-orange-700', label: 'Nêo Compareceu' }
     };
 
     const badge = badges[status];
@@ -263,11 +263,11 @@ export default function Appointments() {
         </button>
       </div>
 
-      {/* Filtros e Visualização */}
+      {/* Filtros e Visualizaçêo */}
       <div className="bg-white rounded-lg shadow p-4 mb-6">
         <div className="flex items-center justify-between flex-wrap gap-4">
           <div className="flex items-center gap-4 flex-wrap">
-            {/* Modo de visualização */}
+            {/* Modo de visualizaçêo */}
             <div className="flex items-center gap-2 border rounded-lg p-1">
               <button
                 onClick={() => setViewMode('list')}
@@ -473,7 +473,7 @@ export default function Appointments() {
         </div>
       )}
 
-      {/* Visualização de Calendário */}
+      {/* Visualizaçêo de Calendário */}
       {!loading && viewMode === 'calendar' && (
         <div className="bg-white rounded-lg shadow p-6">
           {/* Cabeçalho do Calendário */}
@@ -661,10 +661,10 @@ export default function Appointments() {
                     </select>
                   </div>
 
-                  {/* Duração */}
+                  {/* Duraçêo */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Duração (minutos) *
+                      Duraçêo (minutos) *
                     </label>
                     <select
                       value={formData.duration}

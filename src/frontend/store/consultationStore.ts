@@ -49,7 +49,7 @@ export const useConsultationStore = create<ConsultationState>((set, get) => ({
       if (response.success && response.data) {
         set({ selectedConsultation: response.data, loading: false });
       } else {
-        set({ error: response.error || 'Consulta não encontrada', loading: false });
+        set({ error: response.error || 'Consulta nêo encontrada', loading: false });
       }
     } catch (error) {
       set({ error: 'Erro ao carregar consulta', loading: false });

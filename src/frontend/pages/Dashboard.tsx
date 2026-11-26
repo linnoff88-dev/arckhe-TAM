@@ -58,7 +58,7 @@ const Dashboard: React.FC = () => {
     a => a.status === 'scheduled' || a.status === 'confirmed' || a.status === 'in_progress'
   );
 
-  // Dados para gráfico de pizza (distribuição de tipos de consulta)
+  // Dados para gráfico de pizza (distribuiçêo de tipos de consulta)
   const appointmentTypeData = [
     { name: 'Presencial', value: appointments.filter(a => a.type === 'presencial').length, color: '#3b82f6' },
     { name: 'Telemedicina', value: appointments.filter(a => a.type === 'telemedicina').length, color: '#10b981' }
@@ -82,7 +82,7 @@ const Dashboard: React.FC = () => {
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-        <p className="text-gray-600 mt-1">Visão geral do sistema de telemedicina</p>
+        <p className="text-gray-600 mt-1">Visêo geral do sistema de telemedicina</p>
       </div>
 
       {/* Cards de Estatísticas */}
@@ -142,7 +142,7 @@ const Dashboard: React.FC = () => {
         <div className="bg-gradient-to-br from-purple-500 to-purple-600 text-white rounded-lg shadow-lg p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-purple-100 text-sm mb-1">Satisfação</p>
+              <p className="text-purple-100 text-sm mb-1">Satisfaçêo</p>
               <p className="text-3xl font-bold">{metrics?.satisfactionRate || 0}%</p>
             </div>
             <Activity className="w-12 h-12 text-purple-200" />

@@ -50,7 +50,7 @@ export const useAppointmentStore = create<AppointmentState>((set, get) => ({
       if (response.success && response.data) {
         set({ selectedAppointment: response.data, loading: false });
       } else {
-        set({ error: response.error || 'Agendamento não encontrado', loading: false });
+        set({ error: response.error || 'Agendamento nêo encontrado', loading: false });
       }
     } catch (error) {
       set({ error: 'Erro ao carregar agendamento', loading: false });

@@ -5,27 +5,27 @@
 ### ✅ Concluído (30%)
 - Frontend completo com dados mock (90%)
 - Estrutura base do backend
-- Estrutura de pastas e organização
-- Documentação inicial
+- Estrutura de pastas e organizaçêo
+- Documentaçêo inicial
 
 ### 🟡 Em Progresso (0%)
 - Nenhuma tarefa em andamento
 
 ### ❌ Pendente (70%)
-- Conexão com banco de dados
+- Conexêo com banco de dados
 - APIs REST funcionais
-- Autenticação JWT
+- Autenticaçêo JWT
 - WebRTC para videochamadas
 - Testes automatizados
 - Deploy e infraestrutura
 
 ---
 
-## 🗺️ Roadmap de Implementação
+## 🗺️ Roadmap de Implementaçêo
 
 ### **FASE 1: Backend e Database** (Prioridade ALTA) - 3-4 semanas
 
-#### 1.1 Configuração do Banco de Dados PostgreSQL
+#### 1.1 Configuraçêo do Banco de Dados PostgreSQL
 **Tempo estimado: 1 semana**
 
 - [ ] Instalar e configurar PostgreSQL localmente
@@ -42,7 +42,7 @@
   - [ ] Criar relacionamentos entre tabelas
   - [ ] Executar `npx prisma migrate dev` para criar tabelas
 - [ ] Criar seeds para popular banco com dados iniciais
-- [ ] Testar conexão e queries básicas
+- [ ] Testar conexêo e queries básicas
 
 **Modelos necessários:**
 - User (médicos, enfermeiros, recepcionistas)
@@ -55,10 +55,10 @@
 - Notification (notificações)
 - AuditLog (logs de auditoria)
 
-#### 1.2 Implementação das APIs REST
+#### 1.2 Implementaçêo das APIs REST
 **Tempo estimado: 2 semanas**
 
-**Autenticação:**
+**Autenticaçêo:**
 - [ ] POST `/api/auth/login` - Login com email/senha
 - [ ] POST `/api/auth/register` - Registro de novo usuário
 - [ ] POST `/api/auth/refresh` - Refresh token
@@ -66,7 +66,7 @@
 - [ ] GET `/api/auth/me` - Dados do usuário autenticado
 
 **Pacientes:**
-- [ ] GET `/api/patients` - Listar pacientes (com paginação e busca)
+- [ ] GET `/api/patients` - Listar pacientes (com paginaçêo e busca)
 - [ ] GET `/api/patients/:id` - Detalhes de um paciente
 - [ ] POST `/api/patients` - Criar novo paciente
 - [ ] PUT `/api/patients/:id` - Atualizar paciente
@@ -87,7 +87,7 @@
 - [ ] POST `/api/consultations` - Criar consulta
 - [ ] PUT `/api/consultations/:id` - Atualizar consulta
 - [ ] POST `/api/consultations/:id/complete` - Finalizar consulta
-- [ ] POST `/api/consultations/:id/prescriptions` - Adicionar prescrição
+- [ ] POST `/api/consultations/:id/prescriptions` - Adicionar prescriçêo
 - [ ] GET `/api/consultations/:id/pdf` - Gerar PDF do prontuário
 
 **Dashboard:**
@@ -104,20 +104,20 @@
 **Notificações:**
 - [ ] GET `/api/notifications` - Listar notificações
 - [ ] PATCH `/api/notifications/:id/read` - Marcar como lida
-- [ ] DELETE `/api/notifications/:id` - Deletar notificação
+- [ ] DELETE `/api/notifications/:id` - Deletar notificaçêo
 
-#### 1.3 Autenticação e Autorização
+#### 1.3 Autenticaçêo e Autorizaçêo
 **Tempo estimado: 3 dias**
 
 - [ ] Implementar JWT (JSON Web Tokens)
-- [ ] Criar middleware de autenticação
-- [ ] Criar middleware de autorização por role
+- [ ] Criar middleware de autenticaçêo
+- [ ] Criar middleware de autorizaçêo por role
 - [ ] Hash de senhas com bcrypt
 - [ ] Implementar refresh tokens
-- [ ] Proteção contra CSRF
+- [ ] Proteçêo contra CSRF
 - [ ] Rate limiting para evitar ataques
 
-#### 1.4 Integração Frontend ↔ Backend
+#### 1.4 Integraçêo Frontend ↔ Backend
 **Tempo estimado: 4 dias**
 
 - [ ] Remover mock APIs do frontend
@@ -137,20 +137,20 @@
 
 **Backend:**
 - [ ] Instalar Socket.io para WebSockets
-- [ ] Criar servidor de sinalização WebRTC
+- [ ] Criar servidor de sinalizaçêo WebRTC
 - [ ] Implementar salas de videochamada
 - [ ] Gerenciar conexões peer-to-peer
 - [ ] Implementar chat em tempo real
-- [ ] Logs de chamadas (duração, qualidade)
+- [ ] Logs de chamadas (duraçêo, qualidade)
 
 **Frontend:**
 - [ ] Integrar biblioteca WebRTC (ex: simple-peer)
 - [ ] Implementar captura de vídeo/áudio real
-- [ ] Conectar ao servidor de sinalização
+- [ ] Conectar ao servidor de sinalizaçêo
 - [ ] Implementar compartilhamento de tela
-- [ ] Adicionar gravação de chamadas (opcional)
-- [ ] Testes de qualidade de conexão
-- [ ] Fallback para conexão ruim
+- [ ] Adicionar gravaçêo de chamadas (opcional)
+- [ ] Testes de qualidade de conexêo
+- [ ] Fallback para conexêo ruim
 
 **Tecnologias:**
 - Socket.io
@@ -162,7 +162,7 @@
 **Tempo estimado: 4 dias**
 
 - [ ] Configurar Socket.io para notificações
-- [ ] Criar eventos de notificação:
+- [ ] Criar eventos de notificaçêo:
   - Novo agendamento
   - Agendamento confirmado/cancelado
   - Lembrete de consulta (15 min antes)
@@ -172,7 +172,7 @@
 - [ ] Adicionar notificações push no browser
 - [ ] Persistir notificações no banco
 
-#### 2.3 Geração de Documentos (PDF)
+#### 2.3 Geraçêo de Documentos (PDF)
 **Tempo estimado: 3 dias**
 
 - [ ] Instalar biblioteca PDF (ex: PDFKit, Puppeteer)
@@ -180,10 +180,10 @@
   - [ ] Prontuário completo
   - [ ] Receita médica
   - [ ] Atestado médico
-  - [ ] Solicitação de exames
+  - [ ] Solicitaçêo de exames
   - [ ] Relatório de consulta
 - [ ] Adicionar assinatura digital (opcional)
-- [ ] Implementar impressão direta
+- [ ] Implementar impressêo direta
 
 #### 2.4 Upload de Arquivos
 **Tempo estimado: 2 dias**
@@ -191,9 +191,9 @@
 - [ ] Configurar storage (local ou cloud: AWS S3, Cloudinary)
 - [ ] Implementar upload de fotos de pacientes
 - [ ] Upload de exames (imagens, PDFs)
-- [ ] Validação de tipos e tamanhos de arquivo
-- [ ] Visualização de arquivos no frontend
-- [ ] Compressão de imagens
+- [ ] Validaçêo de tipos e tamanhos de arquivo
+- [ ] Visualizaçêo de arquivos no frontend
+- [ ] Compressêo de imagens
 
 #### 2.5 Relatórios e Análises
 **Tempo estimado: 5 dias**
@@ -201,7 +201,7 @@
 - [ ] Criar dashboards administrativos
 - [ ] Relatórios de atendimentos por período
 - [ ] Relatórios por médico/especialidade
-- [ ] Exportação de dados (CSV, Excel)
+- [ ] Exportaçêo de dados (CSV, Excel)
 - [ ] Gráficos avançados:
   - Taxa de no-show
   - Tempo médio de atendimento
@@ -222,13 +222,13 @@
 - [ ] Testes de componentes React (React Testing Library)
 - [ ] Cobertura mínima: 70%
 
-#### 3.2 Testes de Integração
+#### 3.2 Testes de Integraçêo
 **Tempo estimado: 3 dias**
 
 - [ ] Testes de APIs com Supertest
 - [ ] Testes de fluxos completos (E2E)
-- [ ] Testes de autenticação
-- [ ] Testes de autorização
+- [ ] Testes de autenticaçêo
+- [ ] Testes de autorizaçêo
 
 #### 3.3 Testes E2E
 **Tempo estimado: 4 dias**
@@ -247,13 +247,13 @@
 #### 4.1 Segurança
 **Tempo estimado: 4 dias**
 
-- [ ] Implementar HTTPS em produção
-- [ ] Proteção contra SQL Injection (Prisma já protege)
-- [ ] Proteção contra XSS
-- [ ] Proteção contra CSRF
+- [ ] Implementar HTTPS em produçêo
+- [ ] Proteçêo contra SQL Injection (Prisma já protege)
+- [ ] Proteçêo contra XSS
+- [ ] Proteçêo contra CSRF
 - [ ] Rate limiting nas APIs
-- [ ] Validação de inputs (Zod)
-- [ ] Sanitização de dados
+- [ ] Validaçêo de inputs (Zod)
+- [ ] Sanitizaçêo de dados
 - [ ] Implementar CORS corretamente
 - [ ] Logs de auditoria (quem fez o quê, quando)
 - [ ] Conformidade com LGPD:
@@ -264,28 +264,28 @@
 #### 4.2 Performance
 **Tempo estimado: 3 dias**
 
-- [ ] Otimização de queries do banco (índices)
+- [ ] Otimizaçêo de queries do banco (índices)
 - [ ] Cache com Redis:
   - Cache de dashboard
   - Cache de listagens
   - Session storage
 - [ ] Lazy loading no frontend
 - [ ] Code splitting
-- [ ] Otimização de imagens (WebP)
-- [ ] Minificação e bundling
+- [ ] Otimizaçêo de imagens (WebP)
+- [ ] Minificaçêo e bundling
 - [ ] Lighthouse score > 90
 
 ---
 
 ### **FASE 5: Deploy e Infraestrutura** (Prioridade MÉDIA) - 1 semana
 
-#### 5.1 Containerização
+#### 5.1 Containerizaçêo
 **Tempo estimado: 2 dias**
 
 - [ ] Criar `Dockerfile` para backend
 - [ ] Criar `Dockerfile` para frontend
 - [ ] Criar `docker-compose.yml` para desenvolvimento
-- [ ] Criar `docker-compose.prod.yml` para produção
+- [ ] Criar `docker-compose.prod.yml` para produçêo
 - [ ] Incluir PostgreSQL no docker-compose
 - [ ] Incluir Redis no docker-compose
 
@@ -296,23 +296,23 @@
 - [ ] Pipeline de build:
   - Lint
   - Testes unitários
-  - Testes de integração
+  - Testes de integraçêo
   - Build
 - [ ] Pipeline de deploy automático
-- [ ] Deploy em staging antes de produção
+- [ ] Deploy em staging antes de produçêo
 
-#### 5.3 Deploy em Produção
+#### 5.3 Deploy em Produçêo
 **Tempo estimado: 3 dias**
 
 **Opções de hospedagem:**
 
-**Opção 1 - Cloud Completo:**
+**Opçêo 1 - Cloud Completo:**
 - Frontend: Vercel ou Netlify
 - Backend: Railway, Render ou Heroku
 - Banco: Supabase ou Railway PostgreSQL
 - WebRTC: Twilio ou próprio servidor TURN
 
-**Opção 2 - VPS:**
+**Opçêo 2 - VPS:**
 - VPS (DigitalOcean, AWS EC2, Linode)
 - Docker + Docker Compose
 - Nginx como reverse proxy
@@ -330,19 +330,19 @@
 
 ---
 
-### **FASE 6: Documentação e Treinamento** (Prioridade BAIXA) - 1 semana
+### **FASE 6: Documentaçêo e Treinamento** (Prioridade BAIXA) - 1 semana
 
-#### 6.1 Documentação Técnica
+#### 6.1 Documentaçêo Técnica
 **Tempo estimado: 3 dias**
 
 - [ ] Documentar APIs (Swagger/OpenAPI)
 - [ ] README completo com setup
-- [ ] Guia de contribuição
+- [ ] Guia de contribuiçêo
 - [ ] Arquitetura do sistema (diagramas)
 - [ ] Diagrama de banco de dados
 - [ ] Fluxogramas de processos
 
-#### 6.2 Documentação de Usuário
+#### 6.2 Documentaçêo de Usuário
 **Tempo estimado: 2 dias**
 
 - [ ] Manual do médico
@@ -354,7 +354,7 @@
 #### 6.3 Treinamento
 **Tempo estimado: 2 dias**
 
-- [ ] Criar apresentação de treinamento
+- [ ] Criar apresentaçêo de treinamento
 - [ ] Ambiente de testes para treinamento
 - [ ] Guia de boas práticas
 
@@ -362,20 +362,20 @@
 
 ## 📅 Cronograma Estimado
 
-| Fase | Duração | Início | Término |
+| Fase | Duraçêo | Início | Término |
 |------|---------|--------|---------|
 | **FASE 1** - Backend e Database | 3-4 semanas | Semana 1 | Semana 4 |
 | **FASE 2** - Funcionalidades Avançadas | 3-4 semanas | Semana 5 | Semana 8 |
 | **FASE 3** - Testes e Qualidade | 2 semanas | Semana 9 | Semana 10 |
 | **FASE 4** - Segurança e Performance | 1 semana | Semana 11 | Semana 11 |
 | **FASE 5** - Deploy e Infraestrutura | 1 semana | Semana 12 | Semana 12 |
-| **FASE 6** - Documentação | 1 semana | Semana 13 | Semana 13 |
+| **FASE 6** - Documentaçêo | 1 semana | Semana 13 | Semana 13 |
 
 **TOTAL: 13 semanas (≈ 3 meses) para sistema 100% operacional**
 
 ---
 
-## 🎯 Priorização Recomendada
+## 🎯 Priorizaçêo Recomendada
 
 ### Prioridade CRÍTICA (MVP)
 Para ter um sistema minimamente funcional:
@@ -383,8 +383,8 @@ Para ter um sistema minimamente funcional:
 1. ✅ Frontend completo (JÁ FEITO)
 2. ⏳ Banco de dados + Prisma
 3. ⏳ APIs REST básicas (CRUD)
-4. ⏳ Autenticação JWT
-5. ⏳ Integração frontend ↔ backend
+4. ⏳ Autenticaçêo JWT
+5. ⏳ Integraçêo frontend ↔ backend
 6. ⏳ Deploy básico
 
 **Tempo: 4-5 semanas**
@@ -396,14 +396,14 @@ Para sistema profissional:
 2. ⏳ Notificações em tempo real
 3. ⏳ Testes automatizados
 4. ⏳ Segurança (LGPD)
-5. ⏳ Deploy em produção
+5. ⏳ Deploy em produçêo
 
 **Tempo: +6-7 semanas**
 
 ### Prioridade MÉDIA (Melhorias)
 Para sistema avançado:
 
-1. ⏳ Geração de PDFs
+1. ⏳ Geraçêo de PDFs
 2. ⏳ Upload de arquivos
 3. ⏳ Relatórios avançados
 4. ⏳ Performance (cache)
@@ -419,10 +419,10 @@ Para sistema avançado:
 - **Node.js** + **TypeScript** ✅
 - **Express** ou **Fastify** ✅
 - **Prisma ORM** (para PostgreSQL)
-- **JWT** (autenticação)
+- **JWT** (autenticaçêo)
 - **Socket.io** (WebSockets)
 - **Bcrypt** (hash de senhas)
-- **Zod** (validação)
+- **Zod** (validaçêo)
 
 ### Frontend
 - **React 18** + **TypeScript** ✅
@@ -511,16 +511,16 @@ npx prisma db seed
 ```
 
 ### Semana 3-4: Implementar APIs
-- Começar pela API de autenticação
+- Começar pela API de autenticaçêo
 - Depois pacientes, agendamentos, consultas
 - Testar com Postman/Insomnia
 - Integrar com frontend
 
 ---
 
-## ✅ Checklist de Produção
+## ✅ Checklist de Produçêo
 
-Antes de colocar em produção, verificar:
+Antes de colocar em produçêo, verificar:
 
 - [ ] Todas as APIs funcionando
 - [ ] Testes com cobertura > 70%
@@ -529,8 +529,8 @@ Antes de colocar em produção, verificar:
 - [ ] Backups automáticos configurados
 - [ ] Monitoramento de erros (Sentry)
 - [ ] Logs centralizados
-- [ ] Documentação completa
-- [ ] Variáveis de ambiente em produção
+- [ ] Documentaçêo completa
+- [ ] Variáveis de ambiente em produçêo
 - [ ] Rate limiting ativo
 - [ ] LGPD compliance
 
@@ -556,5 +556,5 @@ Antes de colocar em produção, verificar:
 ---
 
 **Criado em:** 2025-10-30
-**Última atualização:** 2025-10-30
-**Versão:** 1.0
+**Última atualizaçêo:** 2025-10-30
+**Versêo:** 1.0

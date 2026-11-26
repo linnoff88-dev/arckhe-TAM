@@ -146,7 +146,7 @@ export default function Patients() {
       if (success) {
         toast.success('Paciente excluído', `${patient?.name} foi removido com sucesso`);
       } else {
-        toast.error('Erro ao excluir', 'Não foi possível excluir o paciente');
+        toast.error('Erro ao excluir', 'Nêo foi possível excluir o paciente');
       }
     }
   };
@@ -204,7 +204,7 @@ export default function Patients() {
         setShowModal(false);
         fetchPatients({ page: pagination.page, pageSize: 10, search: searchTerm });
       } else {
-        toast.error('Erro ao salvar', 'Não foi possível salvar o paciente');
+        toast.error('Erro ao salvar', 'Nêo foi possível salvar o paciente');
       }
     } catch (error) {
       toast.error('Erro ao salvar', 'Ocorreu um erro ao salvar o paciente');
@@ -638,7 +638,7 @@ export default function Patients() {
 
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
-                        CNS (Cartão SUS)
+                        CNS (Cartêo SUS)
                       </label>
                       <input
                         type="text"
@@ -849,7 +849,7 @@ export default function Patients() {
                         type="text"
                         value={formData.emergencyContact.relationship}
                         onChange={(e) => setFormData({ ...formData, emergencyContact: { ...formData.emergencyContact, relationship: e.target.value } })}
-                        placeholder="Ex: Mãe, Pai, Irmão..."
+                        placeholder="Ex: Mêe, Pai, Irmêo..."
                         className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                       />
                     </div>

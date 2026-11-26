@@ -10,7 +10,7 @@
 - **Zustand** - State management leve
 - **React Router v6** - Roteamento
 - **React Hook Form** - Gerenciamento de formulários
-- **Zod** - Validação de schemas
+- **Zod** - Validaçêo de schemas
 - **Axios** - Cliente HTTP
 - **Dexie.js** - Wrapper IndexedDB
 - **Workbox** - Service Workers (PWA)
@@ -22,23 +22,23 @@
 - **TypeORM** - ORM para PostgreSQL
 - **PostgreSQL 15** - Banco de dados principal
 - **Redis 7** - Cache e sessões
-- **Passport.js** - Autenticação
-- **JWT** - Tokens de sessão
+- **Passport.js** - Autenticaçêo
+- **JWT** - Tokens de sessêo
 - **Bcrypt** - Hash de senhas
 - **Winston** - Logging
-- **Joi** - Validação de dados
+- **Joi** - Validaçêo de dados
 - **Bull** - Filas de jobs
 
 ### Telemedicina
 - **Mediasoup** - WebRTC SFU server
-- **Socket.io** - Comunicação real-time
+- **Socket.io** - Comunicaçêo real-time
 - **Coturn** - TURN/STUN server
 
 ### Infraestrutura
-- **Docker** - Containerização
-- **Docker Compose** - Orquestração local
+- **Docker** - Containerizaçêo
+- **Docker Compose** - Orquestraçêo local
 - **Nginx** - Reverse proxy
-- **AWS ECS** - Container orchestration (produção)
+- **AWS ECS** - Container orchestration (produçêo)
 - **AWS RDS** - PostgreSQL gerenciado
 - **AWS S3** - Armazenamento de arquivos
 - **AWS CloudFront** - CDN
@@ -49,12 +49,12 @@
 - **Supertest** - Testes de API
 - **Playwright** - Testes E2E
 - **ESLint** - Linting
-- **Prettier** - Formatação
+- **Prettier** - Formataçêo
 - **Husky** - Git hooks
 
 ### Monitoramento
 - **Prometheus** - Métricas
-- **Grafana** - Visualização
+- **Grafana** - Visualizaçêo
 - **Sentry** - Error tracking
 - **Winston + ELK** - Logs centralizados
 
@@ -75,11 +75,11 @@
 ### Por que PostgreSQL?
 - ACID compliance
 - JSON support (flexibilidade)
-- Replicação robusta
+- Replicaçêo robusta
 - Open-source
 
 ### Por que TypeScript?
 - Type safety
 - Melhor IDE support
-- Reduz bugs em produção
-- Documentação implícita
+- Reduz bugs em produçêo
+- Documentaçêo implícita

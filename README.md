@@ -1,37 +1,37 @@
-﻿# ðŸ¥ Sistema TAM - TelessaÃºde e Telemedicina MÃ³vel
+ï»¿# ê°Å¸ÂÂ¥ Sistema TAM - TelessaêÂºde e Telemedicina MêÂ³vel
 
-Sistema integrado para gestÃ£o de atendimentos de telessaÃºde em unidades mÃ³veis, conectando pacientes em comunidades vulnerÃ¡veis com mÃ©dicos especialistas remotos.
+Sistema integrado para gestêÂ£o de atendimentos de telessaêÂºde em unidades mêÂ³veis, conectando pacientes em comunidades vulnerêÂ¡veis com mêÂ©dicos especialistas remotos.
 
-## ðŸ“‹ Sobre o Projeto
+## ê°Å¸ââ¹ Sobre o Projeto
 
-O Sistema TAM Ã© uma plataforma completa que permite:
-- âœ… Atendimento mÃ©dico remoto via telemedicina
-- âœ… ProntuÃ¡rio eletrÃ´nico do paciente (PEP)
-- âœ… Funcionamento offline em Ã¡reas remotas
-- âœ… IntegraÃ§Ã£o com e-SUS e DATASUS
-- âœ… GestÃ£o de agendamentos e relatÃ³rios
+O Sistema TAM êÂ© uma plataforma completa que permite:
+- ê¢Åâ¦ Atendimento mêÂ©dico remoto via telemedicina
+- ê¢Åâ¦ ProntuêÂ¡rio eletrêÂ´nico do paciente (PEP)
+- ê¢Åâ¦ Funcionamento offline em êÂ¡reas remotas
+- ê¢Åâ¦ IntegraêÂ§êÂ£o com e-SUS e DATASUS
+- ê¢Åâ¦ GestêÂ£o de agendamentos e relatêÂ³rios
 
 **Meta**: Atender 6.000 pessoas/ano, reduzindo tempo de espera em 30%
 
-## ðŸ“š DocumentaÃ§Ã£o
+## ê°Å¸âÅ¡ DocumentaêÂ§êÂ£o
 
-- [Viabilidade TÃ©cnica](./docs/viabilidade-tecnica.md) - AnÃ¡lise completa de viabilidade
+- [Viabilidade TêÂ©cnica](./docs/viabilidade-tecnica.md) - AnêÂ¡lise completa de viabilidade
 - [PRD - Product Requirements](./docs/prd.md) - Requisitos do produto
 - [Arquitetura](./docs/architecture.md) - Arquitetura do sistema
-- [Tech Stack](./docs/tech-stack.md) - Stack tecnolÃ³gico
+- [Tech Stack](./docs/tech-stack.md) - Stack tecnolêÂ³gico
 
-## ðŸš€ Quick Start
+## ê°Å¸Å¡â¬ Quick Start
 
-### PrÃ©-requisitos
+### PrêÂ©-requisitos
 - Node.js 20+
 - PostgreSQL 15+
 - Redis 7+
 - Docker (opcional, mas recomendado)
 
-### InstalaÃ§Ã£o com Docker
+### InstalaêÂ§êÂ£o com Docker
 
 ```bash
-# Clone o repositÃ³rio
+# Clone o repositêÂ³rio
 git clone https://github.com/seu-org/tam.git
 cd tam
 
@@ -43,15 +43,15 @@ docker-compose up -d
 # API: http://localhost:4000
 ```
 
-### InstalaÃ§Ã£o Manual
+### InstalaêÂ§êÂ£o Manual
 
 ```bash
-# Instale dependÃªncias
+# Instale dependêÂªncias
 npm install
 
-# Configure variÃ¡veis de ambiente
+# Configure variêÂ¡veis de ambiente
 cp .env.example .env
-# Edite .env com suas configuraÃ§Ãµes
+# Edite .env com suas configuraêÂ§êÂµes
 
 # Execute migrations
 npm run migration:run
@@ -60,30 +60,30 @@ npm run migration:run
 npm run dev
 ```
 
-## ðŸ—ï¸ Estrutura do Projeto
+## ê°Å¸Ââê¯Â¸Â Estrutura do Projeto
 
 ```
 tam/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ frontend/          # AplicaÃ§Ã£o React
-â”‚   â”‚   â”œâ”€â”€ components/    # Componentes React
-â”‚   â”‚   â”œâ”€â”€ pages/         # PÃ¡ginas
-â”‚   â”‚   â”œâ”€â”€ services/      # API clients
-â”‚   â”‚   â””â”€â”€ store/         # State management
-â”‚   â”‚
-â”‚   â””â”€â”€ backend/           # API Node.js
-â”‚       â”œâ”€â”€ controllers/   # Controllers
-â”‚       â”œâ”€â”€ services/      # Business logic
-â”‚       â”œâ”€â”€ repositories/  # Data access
-â”‚       â”œâ”€â”€ entities/      # TypeORM entities
-â”‚       â””â”€â”€ routes/        # Express routes
-â”‚
-â”œâ”€â”€ docs/                  # DocumentaÃ§Ã£o
-â”œâ”€â”€ tests/                 # Testes
-â””â”€â”€ docker/                # Docker configs
+ê¢âÅê¢ââ¬ê¢ââ¬ src/
+ê¢ââ   ê¢âÅê¢ââ¬ê¢ââ¬ frontend/          # AplicaêÂ§êÂ£o React
+ê¢ââ   ê¢ââ   ê¢âÅê¢ââ¬ê¢ââ¬ components/    # Componentes React
+ê¢ââ   ê¢ââ   ê¢âÅê¢ââ¬ê¢ââ¬ pages/         # PêÂ¡ginas
+ê¢ââ   ê¢ââ   ê¢âÅê¢ââ¬ê¢ââ¬ services/      # API clients
+ê¢ââ   ê¢ââ   ê¢ââê¢ââ¬ê¢ââ¬ store/         # State management
+ê¢ââ   ê¢ââ
+ê¢ââ   ê¢ââê¢ââ¬ê¢ââ¬ backend/           # API Node.js
+ê¢ââ       ê¢âÅê¢ââ¬ê¢ââ¬ controllers/   # Controllers
+ê¢ââ       ê¢âÅê¢ââ¬ê¢ââ¬ services/      # Business logic
+ê¢ââ       ê¢âÅê¢ââ¬ê¢ââ¬ repositories/  # Data access
+ê¢ââ       ê¢âÅê¢ââ¬ê¢ââ¬ entities/      # TypeORM entities
+ê¢ââ       ê¢ââê¢ââ¬ê¢ââ¬ routes/        # Express routes
+ê¢ââ
+ê¢âÅê¢ââ¬ê¢ââ¬ docs/                  # DocumentaêÂ§êÂ£o
+ê¢âÅê¢ââ¬ê¢ââ¬ tests/                 # Testes
+ê¢ââê¢ââ¬ê¢ââ¬ docker/                # Docker configs
 ```
 
-## ðŸ› ï¸ Scripts DisponÃ­veis
+## ê°Å¸âºÂ ê¯Â¸Â Scripts DisponêÂ­veis
 
 ```bash
 # Desenvolvimento
@@ -98,7 +98,7 @@ npm run build:backend   # Build backend
 
 # Testes
 npm test               # Todos os testes
-npm run test:unit      # Testes unitÃ¡rios
+npm run test:unit      # Testes unitêÂ¡rios
 npm run test:e2e       # Testes E2E
 
 # Qualidade
@@ -112,15 +112,15 @@ npm run migration:run       # Executa migrations
 npm run seed               # Popula dados de teste
 ```
 
-## ðŸ” SeguranÃ§a
+## ê°Å¸âÂ SeguranêÂ§a
 
-- AutenticaÃ§Ã£o JWT com refresh tokens
-- Criptografia AES-256 para dados sensÃ­veis
-- HTTPS obrigatÃ³rio em produÃ§Ã£o
+- AutenticaêÂ§êÂ£o JWT com refresh tokens
+- Criptografia AES-256 para dados sensêÂ­veis
+- HTTPS obrigatêÂ³rio em produêÂ§êÂ£o
 - Conformidade LGPD
 - Audit trail de acessos
 
-## ðŸ“Š Tecnologias
+## ê°Å¸âÅ  Tecnologias
 
 **Frontend**: React, TypeScript, TailwindCSS, Zustand
 **Backend**: Node.js, Express, TypeORM, PostgreSQL
@@ -129,7 +129,7 @@ npm run seed               # Popula dados de teste
 
 Ver [Tech Stack completo](./docs/tech-stack.md)
 
-## ðŸ¤ Contribuindo
+## ê°Å¸Â¤Â Contribuindo
 
 ```bash
 # Crie uma branch
@@ -142,28 +142,28 @@ git commit -m "feat: adiciona funcionalidade X"
 git push origin feature/minha-feature
 ```
 
-## ðŸ“ LicenÃ§a
+## ê°Å¸âÂ LicenêÂ§a
 
-Este projeto Ã© licenciado sob [MIT License](./LICENSE)
+Este projeto êÂ© licenciado sob [MIT License](./LICENSE)
 
-## ðŸ‘¥ Time
+## ê°Å¸âÂ¥ Time
 
 **Instituto Casa do Pai**
-- Projeto de TelessaÃºde e Telemedicina MÃ³vel
+- Projeto de TelessaêÂºde e Telemedicina MêÂ³vel
 - Contato: contato@casadopai.org.br
 
-## ðŸ“ž Suporte
+## ê°Å¸âÅ¾ Suporte
 
-- **DocumentaÃ§Ã£o**: [docs/](./docs/)
+- **DocumentaêÂ§êÂ£o**: [docs/](./docs/)
 - **Issues**: [GitHub Issues](https://github.com/seu-org/tam/issues)
 - **Email**: suporte@tam.com.br
 
 ---
 
-**VersÃ£o**: 1.0.0
+**VersêÂ£o**: 1.0.0
 **Status**: Em Desenvolvimento
-**Ãšltima atualizaÃ§Ã£o**: Outubro 2025
+**êÅ¡ltima atualizaêÂ§êÂ£o**: Outubro 2025
 
 ---
 
-Projeto adaptado da comunidade INEMA TDS - Marca Arckhe
+Projeto  - ARCKHÉe

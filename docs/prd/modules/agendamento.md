@@ -1,6 +1,6 @@
 # Módulo de Agendamento - Sistema TAM
 
-## 1. Visão Geral
+## 1. Visêo Geral
 
 O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das consultas, desde o agendamento inicial até o check-in do paciente na unidade móvel. Ele permite que operadores e técnicos organizem o fluxo de atendimento de forma eficiente, evitando filas e otimizando o tempo dos profissionais de saúde.
 
@@ -12,25 +12,25 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 - Enviar notificações e lembretes aos pacientes
 - Reduzir no-shows através de confirmações
 - Permitir fila de espera para encaixes
-- Funcionar offline com sincronização posterior
+- Funcionar offline com sincronizaçêo posterior
 
 ## 3. Personas Atendidas
 
 - **Operador/Recepcionista**: Agenda consultas, gerencia calendário
 - **Técnico de Enfermagem**: Visualiza agenda do dia, faz check-in
-- **Coordenador**: Monitora ocupação e performance
+- **Coordenador**: Monitora ocupaçêo e performance
 - **Paciente**: (indiretamente) recebe confirmações e lembretes
 
 ## 4. Funcionalidades Detalhadas
 
 ### 4.1 Criar Agendamento
 
-**Descrição**: Permite agendar uma consulta para um paciente em data e horário específicos.
+**Descriçêo**: Permite agendar uma consulta para um paciente em data e horário específicos.
 
 **Fluxo Principal:**
 1. Operador acessa módulo de agendamento
 2. Busca paciente por CPF/CNS/Nome
-   - Se não encontrado, redireciona para cadastro
+   - Se nêo encontrado, redireciona para cadastro
 3. Seleciona tipo de atendimento:
    - Consulta presencial
    - Teleconsulta
@@ -42,12 +42,12 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 7. Define prioridade (Normal, Prioritário, Urgente)
 8. Adiciona observações (opcional)
 9. Confirma agendamento
-10. Sistema envia notificação ao paciente
+10. Sistema envia notificaçêo ao paciente
 
 **Regras de Negócio:**
-- Duração padrão: 30 minutos por consulta
+- Duraçêo padrêo: 30 minutos por consulta
 - Intervalo mínimo entre consultas: 15 minutos
-- Não permitir agendamento em horários já ocupados
+- Nêo permitir agendamento em horários já ocupados
 - Máximo de 2 agendamentos por paciente no mesmo dia
 - Agendamento com até 60 dias de antecedência
 - Mínimo 2 horas de antecedência para agendamentos do mesmo dia
@@ -60,13 +60,13 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 - Tipo de atendimento (obrigatório)
 - Especialidade (obrigatório)
 - Unidade móvel (obrigatório)
-- Prioridade (padrão: Normal)
+- Prioridade (padrêo: Normal)
 - Motivo/Queixa (opcional)
 - Observações (opcional)
-- Enviar notificação (padrão: Sim)
+- Enviar notificaçêo (padrêo: Sim)
 
 **Validações:**
-- Data não pode ser no passado
+- Data nêo pode ser no passado
 - Horário deve estar dentro do expediente (8h-18h)
 - Paciente deve ter cadastro completo
 - Unidade móvel deve estar ativa
@@ -74,29 +74,29 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 
 **Notificações:**
 - SMS: "Consulta agendada para [data] às [hora] na Unidade [nome]. Endereço: [local]."
-- WhatsApp: Mensagem similar com opção de confirmar/remarcar
+- WhatsApp: Mensagem similar com opçêo de confirmar/remarcar
 - E-mail: (se cadastrado) com convite de calendário
 
 ### 4.2 Visualizar Agenda
 
-**Descrição**: Exibe calendário com todos os agendamentos de uma ou mais unidades.
+**Descriçêo**: Exibe calendário com todos os agendamentos de uma ou mais unidades.
 
 **Visualizações:**
 
-1. **Visão Dia**
+1. **Visêo Dia**
    - Lista cronológica de agendamentos
    - Exibe horário, paciente, tipo, status
    - Destaca horário atual
    - Mostra próximo paciente
 
-2. **Visão Semana**
+2. **Visêo Semana**
    - Grid com dias da semana
    - Blocos coloridos por tipo de atendimento
-   - Taxa de ocupação por dia
+   - Taxa de ocupaçêo por dia
 
-3. **Visão Mês**
+3. **Visêo Mês**
    - Calendário mensal
-   - Indicador de ocupação por dia (%, cor)
+   - Indicador de ocupaçêo por dia (%, cor)
    - Datas com vagas limitadas destacadas
 
 **Filtros:**
@@ -119,11 +119,11 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 - Em atendimento
 - Concluídos
 - Cancelados/No-shows
-- Taxa de ocupação (%)
+- Taxa de ocupaçêo (%)
 
 ### 4.3 Check-in do Paciente
 
-**Descrição**: Confirma presença do paciente na unidade móvel.
+**Descriçêo**: Confirma presença do paciente na unidade móvel.
 
 **Fluxo:**
 1. Técnico busca agendamento do paciente
@@ -150,24 +150,24 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 
 ### 4.4 Remarcar Consulta
 
-**Descrição**: Permite alterar data/hora de um agendamento existente.
+**Descriçêo**: Permite alterar data/hora de um agendamento existente.
 
 **Fluxo:**
 1. Operador localiza agendamento
 2. Clica em "Remarcar"
 3. Seleciona nova data/hora disponível
-4. Informa motivo da remarcação
-5. Confirma alteração
+4. Informa motivo da remarcaçêo
+5. Confirma alteraçêo
 6. Sistema notifica paciente
 
 **Regras:**
-- Permitir remarcação até 2 horas antes
+- Permitir remarcaçêo até 2 horas antes
 - Registrar histórico de remarcações
 - Máximo de 3 remarcações por agendamento
 - Liberar horário anterior para outros agendamentos
 
-**Motivos de Remarcação:**
-- Solicitação do paciente
+**Motivos de Remarcaçêo:**
+- Solicitaçêo do paciente
 - Indisponibilidade da unidade
 - Indisponibilidade do médico
 - Emergência
@@ -175,7 +175,7 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 
 ### 4.5 Cancelar Consulta
 
-**Descrição**: Cancela um agendamento existente.
+**Descriçêo**: Cancela um agendamento existente.
 
 **Fluxo:**
 1. Operador localiza agendamento
@@ -187,8 +187,8 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 7. Libera horário para novos agendamentos
 
 **Motivos de Cancelamento:**
-- Solicitação do paciente
-- Paciente não compareceu (no-show)
+- Solicitaçêo do paciente
+- Paciente nêo compareceu (no-show)
 - Indisponibilidade da unidade
 - Condições climáticas
 - Emergência
@@ -202,30 +202,30 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 
 ### 4.6 Fila de Espera
 
-**Descrição**: Gerencia lista de pacientes aguardando vagas.
+**Descriçêo**: Gerencia lista de pacientes aguardando vagas.
 
 **Funcionalidades:**
 - Adicionar paciente à fila de espera
 - Priorizar por urgência/ordem de chegada
 - Notificar automaticamente quando vaga surgir
 - Paciente tem 2 horas para confirmar
-- Se não confirmar, vaga vai para próximo da fila
+- Se nêo confirmar, vaga vai para próximo da fila
 
 **Campos:**
 - Paciente
 - Tipo de atendimento desejado
-- Período preferencial (manhã/tarde)
+- Período preferencial (manhê/tarde)
 - Prioridade
-- Data de inclusão na fila
+- Data de inclusêo na fila
 - Observações
 
-### 4.7 Confirmação de Consulta
+### 4.7 Confirmaçêo de Consulta
 
-**Descrição**: Sistema envia lembretes e solicita confirmação.
+**Descriçêo**: Sistema envia lembretes e solicita confirmaçêo.
 
 **Fluxo Automático:**
 - 48 horas antes: Enviar lembrete
-- 24 horas antes: Solicitar confirmação
+- 24 horas antes: Solicitar confirmaçêo
 - 2 horas antes: Lembrete final
 
 **Opções para Paciente:**
@@ -235,14 +235,14 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 
 **Ações do Sistema:**
 - Se confirmado: marcar como confirmado
-- Se não responder: manter agendado, mas alertar equipe
-- Se remarcar/cancelar: executar ação correspondente
+- Se nêo responder: manter agendado, mas alertar equipe
+- Se remarcar/cancelar: executar açêo correspondente
 
 ## 5. Regras de Disponibilidade
 
 ### 5.1 Horários de Funcionamento
 
-**Padrão:**
+**Padrêo:**
 - Segunda a Sexta: 8h às 18h
 - Sábado: 8h às 12h
 - Domingo: Fechado
@@ -256,26 +256,26 @@ O Módulo de Agendamento é responsável por gerenciar todo o ciclo de vida das 
 
 **Cálculo Automático:**
 ```
-Capacidade Diária = (Horas de funcionamento × 60) / Duração média consulta
+Capacidade Diária = (Horas de funcionamento × 60) / Duraçêo média consulta
 Exemplo: (10h × 60) / 30min = 20 consultas/dia
 ```
 
 **Fatores:**
-- Duração média por tipo de atendimento
+- Duraçêo média por tipo de atendimento
 - Intervalo entre consultas
 - Tempo de setup da unidade
-- Tempo de limpeza/higienização
+- Tempo de limpeza/higienizaçêo
 
 ### 5.3 Bloqueio de Horários
 
 **Motivos:**
-- Manutenção da unidade
+- Manutençêo da unidade
 - Indisponibilidade de profissional
-- Reunião de equipe
+- Reuniêo de equipe
 - Falta de insumos
 - Condições climáticas adversas
 
-**Ação:**
+**Açêo:**
 - Bloquear range de horários
 - Reagendar consultas afetadas
 - Notificar pacientes
@@ -293,11 +293,11 @@ Exemplo: (10h × 60) / 30min = 20 consultas/dia
 
 - Iniciar atendimento a partir do agendamento
 - Atualizar status para "Em Atendimento"
-- Registrar conclusão
+- Registrar conclusêo
 
 ### 6.3 Com Módulo de Notificações
 
-- Enviar SMS de confirmação
+- Enviar SMS de confirmaçêo
 - Enviar lembretes automáticos
 - Notificar remarcações/cancelamentos
 - Alertar sobre vagas na fila de espera
@@ -406,11 +406,11 @@ interface AppointmentHistory {
 ### 8.1 Tela: Calendário de Agendamentos
 
 **Componentes:**
-- Header com filtros (unidade, data, visualização)
-- Navegação de datas (anterior/próximo)
+- Header com filtros (unidade, data, visualizaçêo)
+- Navegaçêo de datas (anterior/próximo)
 - Grid de agendamentos
 - Sidebar com resumo do dia
-- Botão flutuante "Novo Agendamento"
+- Botêo flutuante "Novo Agendamento"
 
 **Layout:**
 ```
@@ -419,7 +419,7 @@ interface AppointmentHistory {
 ├─────────────────────────────────────────────────────────┤
 │                                              │          │
 │  08:00 ┌──────────────────────┐             │ Resumo   │
-│        │ João Silva           │             │          │
+│        │ Joêo Silva           │             │          │
 │        │ Consulta Presencial  │             │ 12/20    │
 │  08:30 │ ✓ Confirmado         │             │ atend.   │
 │        └──────────────────────┘             │          │
@@ -473,7 +473,7 @@ interface AppointmentHistory {
 │ Observações                              │
 │ [                                    ]   │
 │                                          │
-│ ☑ Enviar notificação ao paciente        │
+│ ☑ Enviar notificaçêo ao paciente        │
 │                                          │
 │          [Cancelar]  [Agendar]           │
 └──────────────────────────────────────────┘
@@ -490,7 +490,7 @@ interface AppointmentHistory {
 │                                             │
 │ Agendamentos de Hoje                        │
 │ ┌─────────────────────────────────────────┐ │
-│ │ 09:00 - João Silva                      │ │
+│ │ 09:00 - Joêo Silva                      │ │
 │ │ Consulta Presencial | CPF: 123.456.789  │ │
 │ │              [Fazer Check-in]           │ │
 │ └─────────────────────────────────────────┘ │
@@ -512,27 +512,27 @@ interface AppointmentHistory {
 
 ### 9.1 Validações de Agendamento
 
-| Campo | Validação | Mensagem de Erro |
+| Campo | Validaçêo | Mensagem de Erro |
 |-------|-----------|------------------|
 | Paciente | Obrigatório, deve existir | "Selecione um paciente válido" |
-| Data | Não pode ser passado | "Data não pode ser no passado" |
+| Data | Nêo pode ser passado | "Data nêo pode ser no passado" |
 | Hora | Dentro do expediente | "Horário fora do expediente" |
 | Tipo | Obrigatório | "Selecione o tipo de atendimento" |
-| Unidade | Deve estar ativa | "Unidade não disponível nesta data" |
+| Unidade | Deve estar ativa | "Unidade nêo disponível nesta data" |
 
 ### 9.2 Conflitos de Horário
 
-**Situação**: Tentar agendar em horário já ocupado
+**Situaçêo**: Tentar agendar em horário já ocupado
 
-**Ação**:
+**Açêo**:
 - Exibir modal: "Horário já ocupado. Deseja encaixar como urgente?"
-- Opções: "Sim, encaixar" | "Não, escolher outro horário"
+- Opções: "Sim, encaixar" | "Nêo, escolher outro horário"
 
 ### 9.3 Paciente com No-shows
 
-**Situação**: Paciente tem 3+ no-shows
+**Situaçêo**: Paciente tem 3+ no-shows
 
-**Ação**:
+**Açêo**:
 - Exibir alerta: "Paciente tem [N] faltas. Confirmar agendamento?"
 - Sugerir: Ligar para confirmar antes de agendar
 
@@ -540,21 +540,21 @@ interface AppointmentHistory {
 
 ### 10.1 Métricas Operacionais
 
-- **Taxa de Ocupação**: (Agendamentos / Capacidade) × 100
+- **Taxa de Ocupaçêo**: (Agendamentos / Capacidade) × 100
 - **Taxa de No-show**: (No-shows / Total Agendamentos) × 100
-- **Taxa de Confirmação**: (Confirmados / Total Agendamentos) × 100
+- **Taxa de Confirmaçêo**: (Confirmados / Total Agendamentos) × 100
 - **Tempo Médio de Espera**: Diferença entre check-in e início do atendimento
-- **Taxa de Remarcação**: (Remarcações / Total Agendamentos) × 100
+- **Taxa de Remarcaçêo**: (Remarcações / Total Agendamentos) × 100
 
 ### 10.2 Metas
 
 | Métrica | Meta |
 |---------|------|
-| Taxa de Ocupação | > 85% |
+| Taxa de Ocupaçêo | > 85% |
 | Taxa de No-show | < 10% |
-| Taxa de Confirmação | > 90% |
+| Taxa de Confirmaçêo | > 90% |
 | Tempo Médio de Espera | < 15 minutos |
-| Taxa de Remarcação | < 15% |
+| Taxa de Remarcaçêo | < 15% |
 
 ## 11. Modo Offline
 
@@ -573,14 +573,14 @@ interface AppointmentHistory {
 - Marcar no-show
 - Criar agendamentos (salvo localmente)
 
-### 11.3 Sincronização
+### 11.3 Sincronizaçêo
 
-**Quando conexão é restabelecida:**
+**Quando conexêo é restabelecida:**
 1. Enviar check-ins realizados
 2. Enviar novos agendamentos
 3. Baixar atualizações (remarcações, cancelamentos)
-4. Resolver conflitos (última alteração vence)
-5. Notificar usuário sobre sincronização completa
+4. Resolver conflitos (última alteraçêo vence)
+5. Notificar usuário sobre sincronizaçêo completa
 
 ## 12. Segurança e Auditoria
 
@@ -596,14 +596,14 @@ interface AppointmentHistory {
 ### 12.2 Auditoria
 
 Registrar todas as ações:
-- Criação de agendamento
-- Edição (com diff)
+- Criaçêo de agendamento
+- Ediçêo (com diff)
 - Cancelamento (com motivo)
 - Check-in
 - No-show marcado
 
 **Campos de Auditoria:**
-- Usuário que realizou ação
+- Usuário que realizou açêo
 - Data/hora
 - IP de origem
 - Dados anteriores e novos
@@ -636,18 +636,18 @@ Registrar todas as ações:
 ### 14.1 Features Futuras
 
 - Agendamento recorrente (pacientes crônicos)
-- Integração com WhatsApp Business para confirmações
-- Sugestão inteligente de horários (IA)
+- Integraçêo com WhatsApp Business para confirmações
+- Sugestêo inteligente de horários (IA)
 - Agendamento online pelo paciente
 - QR Code para check-in automático
 - Análise preditiva de no-shows
-- Otimização automática de agenda
+- Otimizaçêo automática de agenda
 - Video-agendamento (paciente agenda direto por vídeo)
 
 ### 14.2 Melhorias de UX
 
 - Drag-and-drop para reagendar
-- Visualização Kanban de pacientes
+- Visualizaçêo Kanban de pacientes
 - Notificações push no navegador
 - Modo escuro
 - Atalhos de teclado

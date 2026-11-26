@@ -1,34 +1,34 @@
 # PRD - Sistema TAM (Telessaúde e Telemedicina Móvel)
 
-## 1. Visão do Produto
+## 1. Visêo do Produto
 
-### 1.1 Declaração de Visão
+### 1.1 Declaraçêo de Visêo
 
-O Sistema TAM é uma plataforma integrada de telemedicina móvel que democratiza o acesso à saúde em regiões remotas do Brasil, conectando pacientes em unidades móveis com médicos especialistas através de tecnologia de videoconferência, prontuário eletrônico e integração com o SUS.
+O Sistema TAM é uma plataforma integrada de telemedicina móvel que democratiza o acesso à saúde em regiões remotas do Brasil, conectando pacientes em unidades móveis com médicos especialistas através de tecnologia de videoconferência, prontuário eletrônico e integraçêo com o SUS.
 
 ### 1.2 Problema
 
 - **Desigualdade no Acesso**: Populações em áreas remotas têm acesso limitado a especialistas médicos
 - **Deslocamento**: Pacientes precisam viajar longas distâncias para consultas
-- **Fragmentação de Dados**: Falta de histórico médico unificado
+- **Fragmentaçêo de Dados**: Falta de histórico médico unificado
 - **Burocracia**: Processos manuais lentos e propensos a erros
 - **Conectividade**: Áreas remotas com internet instável ou inexistente
 
-### 1.3 Solução
+### 1.3 Soluçêo
 
 Uma plataforma completa que:
 - Permite atendimento remoto via telemedicina em unidades móveis
 - Digitaliza e centraliza prontuários médicos
-- Funciona offline e sincroniza quando há conexão
+- Funciona offline e sincroniza quando há conexêo
 - Integra-se com sistemas do SUS (e-SUS, DATASUS)
-- Facilita agendamento e gestão de pacientes
+- Facilita agendamento e gestêo de pacientes
 
 ### 1.4 Objetivos do Produto
 
 **Objetivos de Negócio:**
 - Atender 10.000 pacientes no primeiro ano
 - Reduzir tempo de atendimento em 40%
-- Alcançar 95% de satisfação dos usuários
+- Alcançar 95% de satisfaçêo dos usuários
 - Integrar com e-SUS em 100% das unidades
 
 **Objetivos de Usuário:**
@@ -51,10 +51,10 @@ Uma plataforma completa que:
 - Atender pacientes remotamente com eficiência
 - Acessar histórico médico completo
 - Prescrever e registrar consultas digitalmente
-- Contribuir com a democratização da saúde
+- Contribuir com a democratizaçêo da saúde
 
 **Dores:**
-- Conexão de vídeo instável
+- Conexêo de vídeo instável
 - Falta de informações prévias do paciente
 - Interface complexa que atrasa atendimento
 - Dificuldade em registrar dados durante consulta
@@ -62,12 +62,12 @@ Uma plataforma completa que:
 **Necessidades:**
 - Interface intuitiva e rápida
 - Acesso fácil ao prontuário
-- Prescrição digital com assinatura
+- Prescriçêo digital com assinatura
 - Vídeo de alta qualidade
 
 **Comportamento no Sistema:**
 - Acessa 5-8 vezes por semana
-- Atende 3-5 pacientes por sessão
+- Atende 3-5 pacientes por sessêo
 - Revisa histórico antes da consulta
 - Usa tablet ou desktop
 
@@ -89,7 +89,7 @@ Uma plataforma completa que:
 - Sistema lento ou travando
 - Dificuldade em áreas sem internet
 - Falta de treinamento em novas tecnologias
-- Pressão para atender muitos pacientes
+- Pressêo para atender muitos pacientes
 
 **Necessidades:**
 - Interface simples e clara
@@ -113,14 +113,14 @@ Uma plataforma completa que:
 
 **Objetivos:**
 - Receber atendimento médico de qualidade
-- Não precisar viajar para a cidade
+- Nêo precisar viajar para a cidade
 - Entender seu diagnóstico e tratamento
 - Ter acesso ao seu histórico médico
 
 **Dores:**
 - Dificuldade de deslocamento
 - Custos com transporte e tempo
-- Medo de não ser bem atendida
+- Medo de nêo ser bem atendida
 - Dificuldade de entender termos médicos
 
 **Necessidades:**
@@ -138,21 +138,21 @@ Uma plataforma completa que:
 
 **Demografia:**
 - 29 anos, Administrador
-- Graduação completa
+- Graduaçêo completa
 - Coordena unidades móveis
 - Familiarizado com tecnologia
 
 **Objetivos:**
 - Gerenciar agendamentos eficientemente
 - Monitorar performance das unidades
-- Gerar relatórios para gestão
-- Garantir integração com SUS
+- Gerar relatórios para gestêo
+- Garantir integraçêo com SUS
 
 **Dores:**
 - Dados inconsistentes ou duplicados
 - Dificuldade em gerar relatórios
 - Falta de visibilidade em tempo real
-- Problemas de sincronização
+- Problemas de sincronizaçêo
 
 **Necessidades:**
 - Dashboard com métricas-chave
@@ -168,7 +168,7 @@ Uma plataforma completa que:
 
 ## 3. User Stories Principais
 
-### 3.1 Épico: Gestão de Pacientes
+### 3.1 Épico: Gestêo de Pacientes
 
 **US-001: Cadastrar Novo Paciente**
 ```
@@ -176,13 +176,13 @@ Como técnico de enfermagem
 Quero cadastrar um novo paciente no sistema
 Para que ele possa receber atendimento e ter seu prontuário digital
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Buscar paciente por CPF/CNS antes de cadastrar
 - Importar dados do CADSUS se disponível
 - Validar campos obrigatórios (Nome, CPF/CNS, Data Nascimento)
 - Salvar localmente se estiver offline
-- Sincronizar quando conexão estiver disponível
-- Exibir mensagem de confirmação
+- Sincronizar quando conexêo estiver disponível
+- Exibir mensagem de confirmaçêo
 ```
 
 **US-002: Buscar Paciente Existente**
@@ -191,7 +191,7 @@ Como profissional de saúde
 Quero buscar um paciente cadastrado
 Para acessar seu histórico e realizar atendimento
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Buscar por CPF, CNS, Nome ou Data de Nascimento
 - Exibir resultados em lista ordenada
 - Mostrar informações básicas na lista
@@ -205,7 +205,7 @@ Como médico
 Quero visualizar o histórico completo do paciente
 Para tomar decisões informadas no atendimento
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Exibir atendimentos anteriores cronologicamente
 - Mostrar diagnósticos, prescrições e procedimentos
 - Destacar alergias e condições crônicas
@@ -221,12 +221,12 @@ Como operador
 Quero agendar uma consulta para um paciente
 Para organizar o fluxo de atendimento
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Selecionar paciente da base
 - Escolher data, hora e tipo de atendimento
 - Visualizar disponibilidade em calendário
 - Definir prioridade (normal, urgente)
-- Enviar confirmação por SMS/WhatsApp
+- Enviar confirmaçêo por SMS/WhatsApp
 - Registrar observações adicionais
 ```
 
@@ -236,7 +236,7 @@ Como técnico de enfermagem
 Quero visualizar a agenda de atendimentos do dia
 Para me preparar e organizar o trabalho
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Exibir lista de agendamentos do dia
 - Mostrar status (Aguardando, Em Atendimento, Concluído)
 - Permitir check-in do paciente
@@ -250,7 +250,7 @@ Como operador
 Quero remarcar ou cancelar uma consulta
 Para gerenciar imprevistos e otimizar agenda
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Localizar consulta agendada
 - Remarcar para nova data/hora disponível
 - Cancelar com motivo obrigatório
@@ -266,7 +266,7 @@ Como técnico de enfermagem
 Quero fazer check-in do paciente
 Para iniciar o atendimento
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Confirmar identidade do paciente
 - Verificar agendamento
 - Atualizar status para "Em Atendimento"
@@ -280,12 +280,12 @@ Como técnico de enfermagem
 Quero registrar os sinais vitais do paciente
 Para documentar seu estado atual
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Registrar: PA, FC, FR, Temp, SpO2, Glicemia, Peso, Altura
 - Calcular IMC automaticamente
 - Validar valores dentro de ranges aceitáveis
 - Alertar sobre valores críticos
-- Salvar timestamp de cada medição
+- Salvar timestamp de cada mediçêo
 - Permitir adicionar observações
 ```
 
@@ -295,7 +295,7 @@ Como técnico de enfermagem
 Quero realizar triagem do paciente
 Para classificar prioridade e coletar queixa principal
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Registrar queixa principal
 - Classificar risco (Protocolo de Manchester ou similar)
 - Coletar histórico de sintomas
@@ -312,12 +312,12 @@ Como técnico de enfermagem
 Quero iniciar videoconsulta com médico
 Para conectar paciente ao especialista
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Verificar conectividade antes de iniciar
 - Conectar com médico disponível
 - Teste de áudio/vídeo antes da chamada
 - Iniciar chamada com um clique
-- Exibir status de conexão
+- Exibir status de conexêo
 - Registrar horário de início
 ```
 
@@ -327,12 +327,12 @@ Como médico
 Quero realizar atendimento por vídeo
 Para examinar e diagnosticar o paciente remotamente
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Visualizar paciente em vídeo de qualidade
 - Acessar prontuário durante chamada
 - Controlar câmera remota (zoom, foco) se disponível
 - Solicitar que técnico mostre detalhes (lesões, etc)
-- Pausar/retomar gravação (se consentido)
+- Pausar/retomar gravaçêo (se consentido)
 - Compartilhar tela se necessário
 ```
 
@@ -342,9 +342,9 @@ Como médico
 Quero prescrever medicamentos durante consulta
 Para documentar tratamento do paciente
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Buscar medicamentos por nome ou princípio ativo
-- Definir dosagem, via, frequência e duração
+- Definir dosagem, via, frequência e duraçêo
 - Adicionar múltiplos medicamentos
 - Incluir orientações de uso
 - Assinar digitalmente com certificado ICP
@@ -356,10 +356,10 @@ Critérios de Aceitação:
 ```
 Como médico
 Quero registrar diagnóstico do paciente
-Para documentar conclusão da consulta
+Para documentar conclusêo da consulta
 
-Critérios de Aceitação:
-- Buscar CID-10 por código ou descrição
+Critérios de Aceitaçêo:
+- Buscar CID-10 por código ou descriçêo
 - Adicionar diagnóstico principal e secundários
 - Registrar hipóteses diagnósticas
 - Documentar conduta e plano de tratamento
@@ -373,9 +373,9 @@ Critérios de Aceitação:
 ```
 Como profissional de saúde
 Quero visualizar o prontuário completo do paciente
-Para ter visão holística de sua saúde
+Para ter visêo holística de sua saúde
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Exibir dados demográficos
 - Listar atendimentos históricos
 - Mostrar diagnósticos e tratamentos
@@ -384,18 +384,18 @@ Critérios de Aceitação:
 - Destacar informações críticas (alergias, etc)
 ```
 
-**US-015: Adicionar Anotação ao Prontuário**
+**US-015: Adicionar Anotaçêo ao Prontuário**
 ```
 Como profissional de saúde
 Quero adicionar anotações ao prontuário
 Para registrar informações relevantes
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Escrever texto livre
-- Categorizar anotação (Observação, Intercorrência, etc)
+- Categorizar anotaçêo (Observaçêo, Intercorrência, etc)
 - Datar e assinar automaticamente
 - Permitir anexar arquivos
-- Tornar anotação imutável após salvar
+- Tornar anotaçêo imutável após salvar
 ```
 
 **US-016: Anexar Documentos**
@@ -404,10 +404,10 @@ Como profissional de saúde
 Quero anexar documentos ao prontuário
 Para manter registros completos
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Upload de PDF, imagens, documentos
 - Categorizar tipo de documento
-- Adicionar descrição
+- Adicionar descriçêo
 - Visualizar documentos anexados
 - Download quando necessário
 - Respeitar limite de tamanho (10MB por arquivo)
@@ -419,24 +419,24 @@ Critérios de Aceitação:
 ```
 Como coordenador
 Quero visualizar dashboard com métricas em tempo real
-Para monitorar operação das unidades
+Para monitorar operaçêo das unidades
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Exibir atendimentos do dia (total, em andamento, concluídos)
-- Mostrar taxa de ocupação
+- Mostrar taxa de ocupaçêo
 - Listar unidades ativas
 - Exibir tempo médio de atendimento
 - Alertar sobre problemas
 - Atualizar automaticamente
 ```
 
-**US-018: Gerar Relatório de Produção**
+**US-018: Gerar Relatório de Produçêo**
 ```
 Como coordenador
-Quero gerar relatório de produção
+Quero gerar relatório de produçêo
 Para prestar contas e analisar performance
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Filtrar por período, unidade, profissional
 - Exibir total de atendimentos
 - Classificar por tipo e especialidade
@@ -445,7 +445,7 @@ Critérios de Aceitação:
 - Incluir gráficos visuais
 ```
 
-### 3.7 Épico: Integração SUS
+### 3.7 Épico: Integraçêo SUS
 
 **US-019: Sincronizar com e-SUS**
 ```
@@ -453,11 +453,11 @@ Como sistema
 Quero sincronizar dados com e-SUS
 Para cumprir obrigações regulatórias
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Enviar fichas de atendimento individual
 - Exportar em formato THRIFT
 - Validar dados antes do envio
-- Registrar status de sincronização
+- Registrar status de sincronizaçêo
 - Retentar em caso de falha
 - Notificar administrador sobre erros
 ```
@@ -468,29 +468,29 @@ Como operador
 Quero validar CNS do paciente
 Para garantir registro correto
 
-Critérios de Aceitação:
+Critérios de Aceitaçêo:
 - Validar algoritmo do CNS
 - Consultar CADSUS online
-- Exibir status de validação
+- Exibir status de validaçêo
 - Permitir prosseguir com CPF se CNS inválido
-- Registrar tentativa de validação
+- Registrar tentativa de validaçêo
 ```
 
 ## 4. Funcionalidades Core (MVP)
 
 ### 4.1 Must Have (Essencial para MVP)
 
-1. **Autenticação e Autorização**
+1. **Autenticaçêo e Autorizaçêo**
    - Login com CPF/e-mail e senha
-   - Recuperação de senha
+   - Recuperaçêo de senha
    - Controle de acesso por perfil (Admin, Médico, Técnico, Operador)
    - Sessões seguras com timeout
 
-2. **Gestão de Pacientes**
+2. **Gestêo de Pacientes**
    - Cadastro completo de pacientes
    - Busca por CPF/CNS/Nome
-   - Visualização de dados cadastrais
-   - Edição de informações
+   - Visualizaçêo de dados cadastrais
+   - Ediçêo de informações
 
 3. **Agendamento Básico**
    - Criar agendamento
@@ -509,15 +509,15 @@ Critérios de Aceitação:
    - Compartilhamento de tela básico
 
 6. **Prontuário Eletrônico**
-   - Visualização de histórico
+   - Visualizaçêo de histórico
    - Registro de atendimento (SOAP)
    - Busca CID-10
-   - Prescrição digital simples
+   - Prescriçêo digital simples
    - Assinatura digital
 
 7. **Modo Offline**
-   - Sincronização de dados essenciais
-   - Operação offline para consultas
+   - Sincronizaçêo de dados essenciais
+   - Operaçêo offline para consultas
    - Sync automático ao reconectar
 
 8. **Dashboard Básico**
@@ -525,7 +525,7 @@ Critérios de Aceitação:
    - Lista de pacientes aguardando
    - Status das unidades
 
-### 4.2 Should Have (Importante, mas não crítico)
+### 4.2 Should Have (Importante, mas nêo crítico)
 
 1. **Agendamento Avançado**
    - Recorrência de consultas
@@ -534,37 +534,37 @@ Critérios de Aceitação:
 
 2. **Prontuário Avançado**
    - Anexar documentos e imagens
-   - Gráficos de evolução
-   - Alertas de interação medicamentosa
+   - Gráficos de evoluçêo
+   - Alertas de interaçêo medicamentosa
 
 3. **Relatórios**
-   - Relatório de produção mensal
+   - Relatório de produçêo mensal
    - Relatório de atendimentos por especialidade
-   - Exportação em Excel/PDF
+   - Exportaçêo em Excel/PDF
 
-4. **Integração e-SUS**
-   - Exportação de fichas
-   - Sincronização batch
+4. **Integraçêo e-SUS**
+   - Exportaçêo de fichas
+   - Sincronizaçêo batch
 
-5. **Gestão de Usuários**
+5. **Gestêo de Usuários**
    - CRUD de usuários
-   - Gestão de permissões
+   - Gestêo de permissões
    - Auditoria de acessos
 
 ### 4.3 Could Have (Desejável)
 
 1. **Mobile App Nativo**
    - App para tablet/smartphone
-   - Sincronização otimizada
+   - Sincronizaçêo otimizada
 
 2. **Recursos de Telemedicina**
-   - Gravação de consultas (consentida)
+   - Gravaçêo de consultas (consentida)
    - Controle de câmera remota
    - Qualidade de vídeo adaptativa
 
 3. **Analytics Avançado**
    - Dashboard executivo
-   - Previsão de demanda
+   - Previsêo de demanda
    - Análise de tendências
 
 4. **Integrações Externas**
@@ -575,13 +575,13 @@ Critérios de Aceitação:
 ### 4.4 Won't Have (Fora do MVP)
 
 1. IA para triagem automática
-2. Integração com laboratórios
+2. Integraçêo com laboratórios
 3. Módulo financeiro/faturamento
 4. App mobile para pacientes
-5. Integração RNDS completa
+5. Integraçêo RNDS completa
 6. Prontuário compartilhado nacional
 
-## 5. Requisitos de Integração
+## 5. Requisitos de Integraçêo
 
 ### 5.1 e-SUS APS
 
@@ -595,7 +595,7 @@ Critérios de Aceitação:
 
 **Formato**: Thrift (binário)
 
-**Frequência**: Batch noturno (2h da manhã)
+**Frequência**: Batch noturno (2h da manhê)
 
 **Validações**:
 - CNS válido
@@ -608,11 +608,11 @@ Critérios de Aceitação:
 **Objetivo**: Validar e buscar dados de pacientes
 
 **Operações:**
-- Consultar cidadão por CNS
+- Consultar cidadêo por CNS
 - Validar CNS
 - Buscar por CPF
 
-**Autenticação**: Certificado digital
+**Autenticaçêo**: Certificado digital
 
 ### 5.3 DATASUS/CNES
 
@@ -634,7 +634,7 @@ Critérios de Aceitação:
 | Atendimentos/mês | 0 | 2.000 | 10.000 |
 | Usuários ativos | 0 | 50 | 200 |
 | Unidades móveis ativas | 0 | 5 | 20 |
-| Taxa de sincronização e-SUS | - | 95% | 99% |
+| Taxa de sincronizaçêo e-SUS | - | 95% | 99% |
 | Uptime do sistema | - | 99% | 99.5% |
 
 ### 6.2 Métricas de Experiência
@@ -642,10 +642,10 @@ Critérios de Aceitação:
 | Métrica | Alvo |
 |---------|------|
 | NPS (Net Promoter Score) | > 50 |
-| Satisfação dos usuários | > 4.5/5 |
+| Satisfaçêo dos usuários | > 4.5/5 |
 | Tempo médio de cadastro | < 3 min |
 | Tempo médio de atendimento | < 15 min |
-| Taxa de conclusão de agendamentos | > 90% |
+| Taxa de conclusêo de agendamentos | > 90% |
 
 ### 6.3 Métricas Técnicas
 
@@ -661,9 +661,9 @@ Critérios de Aceitação:
 
 | Métrica | Alvo |
 |---------|------|
-| Redução de deslocamento de pacientes | 70% |
+| Reduçêo de deslocamento de pacientes | 70% |
 | Economia de tempo do paciente | 3h/consulta |
-| Redução de custo operacional | 30% |
+| Reduçêo de custo operacional | 30% |
 | Aumento de acesso a especialistas | 5x |
 
 ## 7. Roadmap do Produto
@@ -676,7 +676,7 @@ Critérios de Aceitação:
 - Realizar testes internos
 
 **Entregas:**
-- Autenticação e gestão de usuários
+- Autenticaçêo e gestêo de usuários
 - CRUD de pacientes
 - Agendamento básico
 - Prontuário eletrônico simples
@@ -696,15 +696,15 @@ Critérios de Aceitação:
 - Adicionar features importantes
 
 **Entregas:**
-- Integração e-SUS
+- Integraçêo e-SUS
 - Dashboard e relatórios
-- Prescrição digital completa
+- Prescriçêo digital completa
 - Mobile app (React Native)
 - Notificações automáticas
 
 **Critério de Sucesso:**
 - 5 unidades operacionais
-- Sincronização e-SUS funcionando
+- Sincronizaçêo e-SUS funcionando
 - 1.000 atendimentos/mês
 
 ### Fase 3: Optimization (Mês 7-9)
@@ -719,7 +719,7 @@ Critérios de Aceitação:
 - Melhorias de UI/UX
 - Analytics avançado
 - Recursos de telemedicina aprimorados
-- Documentação completa
+- Documentaçêo completa
 
 **Critério de Sucesso:**
 - NPS > 50
@@ -729,49 +729,49 @@ Critérios de Aceitação:
 ### Fase 4: Growth (Mês 10-12)
 
 **Objetivos:**
-- Escalar para produção completa
+- Escalar para produçêo completa
 - Adicionar features avançadas
 - Preparar para crescimento
 
 **Entregas:**
-- Integração RNDS
+- Integraçêo RNDS
 - IA para triagem (beta)
 - App paciente (web)
 - Módulo de exames
-- Expansão para 20 unidades
+- Expansêo para 20 unidades
 
 **Critério de Sucesso:**
 - 10.000 atendimentos/mês
 - 20 unidades ativas
-- Satisfação > 4.5/5
+- Satisfaçêo > 4.5/5
 
 ## 8. Riscos e Mitigações
 
 ### 8.1 Riscos Técnicos
 
-| Risco | Impacto | Probabilidade | Mitigação |
+| Risco | Impacto | Probabilidade | Mitigaçêo |
 |-------|---------|---------------|-----------|
 | Conectividade instável em campo | Alto | Alta | Modo offline robusto, sync inteligente |
-| Complexidade de integração e-SUS | Médio | Média | POC antecipada, consultoria especializada |
+| Complexidade de integraçêo e-SUS | Médio | Média | POC antecipada, consultoria especializada |
 | Performance de vídeo em baixa banda | Alto | Média | Codec adaptativo, qualidade ajustável |
 | Segurança de dados | Crítico | Baixa | Criptografia, auditorias, compliance |
 | Escalabilidade | Médio | Baixa | Arquitetura cloud-native, testes de carga |
 
 ### 8.2 Riscos de Produto
 
-| Risco | Impacto | Probabilidade | Mitigação |
+| Risco | Impacto | Probabilidade | Mitigaçêo |
 |-------|---------|---------------|-----------|
-| Baixa adoção por usuários | Alto | Média | Treinamento, UX simplificado, suporte |
+| Baixa adoçêo por usuários | Alto | Média | Treinamento, UX simplificado, suporte |
 | Resistência de profissionais | Médio | Média | Envolvimento desde o início, beta com champions |
-| Escopo crescente | Médio | Alta | Gestão rigorosa de backlog, foco em MVP |
+| Escopo crescente | Médio | Alta | Gestêo rigorosa de backlog, foco em MVP |
 | Mudanças regulatórias | Médio | Baixa | Monitoramento contínuo, arquitetura flexível |
 
 ### 8.3 Riscos de Negócio
 
-| Risco | Impacto | Probabilidade | Mitigação |
+| Risco | Impacto | Probabilidade | Mitigaçêo |
 |-------|---------|---------------|-----------|
 | Falta de financiamento | Crítico | Baixa | Buscar múltiplas fontes, MVP enxuto |
-| Concorrência | Médio | Média | Foco em diferenciação, parcerias estratégicas |
+| Concorrência | Médio | Média | Foco em diferenciaçêo, parcerias estratégicas |
 | Alterações no SUS | Alto | Média | Relacionamento institucional, flexibilidade |
 
 ## 9. Dependências e Premissas
@@ -786,12 +786,12 @@ Critérios de Aceitação:
 
 ### 9.2 Premissas
 
-- Unidades móveis terão tablet/computador dedicado
-- Médicos terão computador com webcam
+- Unidades móveis terêo tablet/computador dedicado
+- Médicos terêo computador com webcam
 - Equipe técnica disponível para suporte
-- Pacientes consentirão com telemedicina
+- Pacientes consentirêo com telemedicina
 - Conectividade estará disponível pelo menos 1x/dia para sync
-- Profissionais terão CNS e registros profissionais válidos
+- Profissionais terêo CNS e registros profissionais válidos
 
 ## 10. Critérios de Aceite do MVP
 
@@ -800,7 +800,7 @@ O MVP será considerado aceito quando:
 1. **Funcionalidades Implementadas**
    - ✓ Todas as funcionalidades "Must Have" funcionando
    - ✓ Modo offline operacional
-   - ✓ Integração e-SUS enviando dados com sucesso
+   - ✓ Integraçêo e-SUS enviando dados com sucesso
    - ✓ Telemedicina com áudio/vídeo estável
 
 2. **Qualidade**
@@ -809,32 +809,32 @@ O MVP será considerado aceito quando:
    - ✓ Performance dentro dos targets
    - ✓ Aprovado em auditoria de segurança básica
 
-3. **Documentação**
-   - ✓ Documentação técnica completa
+3. **Documentaçêo**
+   - ✓ Documentaçêo técnica completa
    - ✓ Manual do usuário
    - ✓ Guias de treinamento
-   - ✓ Documentação de API
+   - ✓ Documentaçêo de API
 
 4. **Testes**
    - ✓ 50 atendimentos piloto realizados
    - ✓ Feedback positivo de 80% dos usuários beta
    - ✓ Testes de carga passando
-   - ✓ Teste de sincronização e-SUS bem-sucedido
+   - ✓ Teste de sincronizaçêo e-SUS bem-sucedido
 
 5. **Compliance**
    - ✓ Atende LGPD
-   - ✓ Atende Resolução CFM 2.314/2022
+   - ✓ Atende Resoluçêo CFM 2.314/2022
    - ✓ Dados criptografados
    - ✓ Audit trail implementado
 
-## 11. Conclusão
+## 11. Conclusêo
 
 O Sistema TAM representa uma oportunidade significativa de democratizar o acesso à saúde no Brasil através da tecnologia. Este PRD define um caminho claro para entregar um MVP valioso em 3 meses, com roadmap para crescimento sustentável.
 
 O sucesso dependerá de:
 - Foco rigoroso no MVP
-- Colaboração próxima com usuários
+- Colaboraçêo próxima com usuários
 - Qualidade técnica e segurança
-- Execução disciplinada do roadmap
+- Execuçêo disciplinada do roadmap
 
 Com este plano, estamos posicionados para transformar o atendimento de saúde em regiões remotas e criar impacto social significativo.

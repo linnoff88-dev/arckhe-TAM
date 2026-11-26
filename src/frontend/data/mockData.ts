@@ -34,7 +34,7 @@ export const mockUsers: User[] = [
   },
   {
     id: '3',
-    name: 'Dr. João Oliveira',
+    name: 'Dr. Joêo Oliveira',
     email: 'joao.oliveira@tam.com',
     role: 'doctor',
     crm: 'CRM-SP 789012',
@@ -77,7 +77,7 @@ export const mockPatients: Patient[] = [
       number: '123',
       complement: 'Apt 45',
       neighborhood: 'Centro',
-      city: 'São Paulo',
+      city: 'Sêo Paulo',
       state: 'SP',
       zipCode: '01234-567'
     },
@@ -87,7 +87,7 @@ export const mockPatients: Patient[] = [
       phone: '(11) 91234-8765'
     },
     allergies: ['Dipirona', 'Penicilina'],
-    chronicDiseases: ['Hipertensão', 'Diabetes Tipo 2'],
+    chronicDiseases: ['Hipertensêo', 'Diabetes Tipo 2'],
     medications: ['Losartana 50mg', 'Metformina 850mg'],
     bloodType: 'O+',
     photo: 'https://i.pravatar.cc/150?img=60',
@@ -107,12 +107,12 @@ export const mockPatients: Patient[] = [
       street: 'Av. Paulista',
       number: '1000',
       neighborhood: 'Bela Vista',
-      city: 'São Paulo',
+      city: 'Sêo Paulo',
       state: 'SP',
       zipCode: '01310-100'
     },
     emergencyContact: {
-      name: 'João Santos',
+      name: 'Joêo Santos',
       relationship: 'Marido',
       phone: '(11) 92345-9876'
     },
@@ -136,8 +136,8 @@ export const mockPatients: Patient[] = [
     address: {
       street: 'Rua Augusta',
       number: '500',
-      neighborhood: 'Consolação',
-      city: 'São Paulo',
+      neighborhood: 'Consolaçêo',
+      city: 'Sêo Paulo',
       state: 'SP',
       zipCode: '01305-000'
     },
@@ -162,13 +162,13 @@ export const mockPatients: Patient[] = [
       street: 'Rua Vergueiro',
       number: '2000',
       neighborhood: 'Vila Mariana',
-      city: 'São Paulo',
+      city: 'Sêo Paulo',
       state: 'SP',
       zipCode: '04101-000'
     },
     emergencyContact: {
       name: 'Carla Costa',
-      relationship: 'Mãe',
+      relationship: 'Mêe',
       phone: '(11) 94567-1098'
     },
     allergies: [],
@@ -189,10 +189,10 @@ export const mockPatients: Patient[] = [
     phone: '(11) 95678-9012',
     email: 'roberto.ferreira@email.com',
     address: {
-      street: 'Rua da Consolação',
+      street: 'Rua da Consolaçêo',
       number: '1500',
-      neighborhood: 'Consolação',
-      city: 'São Paulo',
+      neighborhood: 'Consolaçêo',
+      city: 'Sêo Paulo',
       state: 'SP',
       zipCode: '01301-100'
     },
@@ -202,7 +202,7 @@ export const mockPatients: Patient[] = [
       phone: '(11) 95678-2109'
     },
     allergies: [],
-    chronicDiseases: ['Hipertensão', 'Colesterol Alto'],
+    chronicDiseases: ['Hipertensêo', 'Colesterol Alto'],
     medications: ['Enalapril 10mg', 'Sinvastatina 20mg'],
     bloodType: 'O-',
     photo: 'https://i.pravatar.cc/150?img=51',
@@ -226,7 +226,7 @@ export const mockAppointments: Appointment[] = [
     specialty: 'Clínico Geral',
     status: 'scheduled',
     location: 'Unidade Móvel 01 - Zona Leste',
-    notes: 'Consulta de retorno - ajuste de medicação',
+    notes: 'Consulta de retorno - ajuste de medicaçêo',
     createdAt: '2025-10-20T10:00:00Z',
     updatedAt: '2025-10-20T10:00:00Z'
   },
@@ -276,7 +276,7 @@ export const mockAppointments: Appointment[] = [
     specialty: 'Pediatria',
     status: 'scheduled',
     location: 'Unidade Móvel 02 - Zona Sul',
-    notes: 'Vacinação + consulta de rotina',
+    notes: 'Vacinaçêo + consulta de rotina',
     createdAt: '2025-10-25T16:45:00Z',
     updatedAt: '2025-10-25T16:45:00Z'
   },
@@ -285,7 +285,7 @@ export const mockAppointments: Appointment[] = [
     patientId: 'p5',
     patientName: 'Roberto Ferreira',
     doctorId: '3',
-    doctorName: 'Dr. João Oliveira',
+    doctorName: 'Dr. Joêo Oliveira',
     date: '2025-10-30',
     time: '15:00',
     duration: 45,
@@ -361,7 +361,7 @@ export const mockConsultations: Consultation[] = [
       glucose: 145,
       recordedBy: 'Enf. Ana Paula'
     },
-    diagnosis: 'Hipertensão arterial sistêmica descompensada',
+    diagnosis: 'Hipertensêo arterial sistêmica descompensada',
     icd10: ['I10'],
     prescriptions: [
       {
@@ -371,7 +371,7 @@ export const mockConsultations: Consultation[] = [
         dosage: '50mg',
         frequency: '1x ao dia',
         duration: '30 dias',
-        instructions: 'Tomar pela manhã, em jejum',
+        instructions: 'Tomar pela manhê, em jejum',
         quantity: 30,
         continuousUse: true
       },
@@ -435,12 +435,12 @@ export const mockConsultations: Consultation[] = [
         dosage: '20mg',
         frequency: '1x ao dia',
         duration: '5 dias',
-        instructions: 'Tomar após café da manhã',
+        instructions: 'Tomar após café da manhê',
         quantity: 5,
         continuousUse: false
       }
     ],
-    observations: 'Orientado a evitar exposição a alérgenos. Retornar se piorar.',
+    observations: 'Orientado a evitar exposiçêo a alérgenos. Retornar se piorar.',
     createdAt: '2025-10-20T14:00:00Z',
     updatedAt: '2025-10-20T14:30:00Z',
     completedAt: '2025-10-20T14:30:00Z'
@@ -485,7 +485,7 @@ export const mockNotifications: Notification[] = [
     id: 'n2',
     type: 'info',
     title: 'Novo agendamento',
-    message: 'Maria Santos agendou consulta para amanhã às 10h',
+    message: 'Maria Santos agendou consulta para amanhê às 10h',
     read: false,
     createdAt: '2025-10-30T10:30:00Z',
     link: '/appointments/a6'

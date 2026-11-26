@@ -11,16 +11,16 @@ class AuthController {
     try {
       const { email, password } = req.body;
 
-      // Validação básica
+      // Validaçêo básica
       if (!email || !password) {
         res.status(400).json({
-          error: 'Email e senha são obrigatórios'
+          error: 'Email e senha sêo obrigatórios'
         });
         return;
       }
 
       // TODO: Buscar usuário no banco de dados
-      // Por enquanto, mock para demonstração
+      // Por enquanto, mock para demonstraçêo
       const mockUser = {
         id: '1',
         name: 'Dr. Roberto Silva',

@@ -98,7 +98,7 @@ export default function VideoCall() {
       setCallDuration(prev => prev + 1);
     }, 1000);
 
-    // Simular variação de qualidade de conexão
+    // Simular variaçêo de qualidade de conexêo
     const qualityTimer = setInterval(() => {
       const random = Math.random();
       if (random > 0.8) setConnectionQuality('excellent');
@@ -161,7 +161,7 @@ export default function VideoCall() {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <div className={`w-2 h-2 rounded-full ${getQualityColor()} animate-pulse`}></div>
-            <span className="text-sm">Conexão: {getQualityText()}</span>
+            <span className="text-sm">Conexêo: {getQualityText()}</span>
           </div>
           <div className="flex items-center gap-2">
             <Clock size={16} />
@@ -192,7 +192,7 @@ export default function VideoCall() {
             <div className="relative w-full h-full bg-gradient-to-br from-gray-800 to-gray-900">
               {isVideoOn ? (
                 <div className="absolute inset-0 flex items-center justify-center">
-                  {/* Simulação de vídeo */}
+                  {/* Simulaçêo de vídeo */}
                   <div className="text-center">
                     <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 mx-auto flex items-center justify-center mb-4 animate-pulse">
                       <User size={96} className="text-white" />
@@ -388,7 +388,7 @@ export default function VideoCall() {
                 </h4>
                 <div className="grid grid-cols-2 gap-2">
                   <div>
-                    <label className="block text-xs text-gray-600 mb-1">Pressão Arterial</label>
+                    <label className="block text-xs text-gray-600 mb-1">Pressêo Arterial</label>
                     <input
                       type="text"
                       value={prontuarioData.pressaoArterial}
@@ -462,10 +462,10 @@ export default function VideoCall() {
                 />
               </div>
 
-              {/* Prescrição */}
+              {/* Prescriçêo */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Prescrição Médica
+                  Prescriçêo Médica
                 </label>
                 <textarea
                   value={prontuarioData.prescricao}
@@ -491,7 +491,7 @@ export default function VideoCall() {
               </div>
             </div>
 
-            {/* Prontuário Footer - Botão Salvar */}
+            {/* Prontuário Footer - Botêo Salvar */}
             <div className="p-4 border-t bg-gray-50">
               <button
                 onClick={() => {
@@ -504,7 +504,7 @@ export default function VideoCall() {
                 Salvar Prontuário
               </button>
               <p className="text-xs text-gray-500 mt-2 text-center">
-                Os dados serão salvos automaticamente
+                Os dados serêo salvos automaticamente
               </p>
             </div>
           </div>

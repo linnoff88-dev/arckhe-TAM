@@ -115,7 +115,7 @@ export default function Consultation() {
     if (success) {
       toast.success('Prontuário salvo', 'As informações foram salvas com sucesso');
     } else {
-      toast.error('Erro ao salvar', 'Não foi possível salvar o prontuário');
+      toast.error('Erro ao salvar', 'Nêo foi possível salvar o prontuário');
     }
   };
 
@@ -129,7 +129,7 @@ export default function Consultation() {
       toast.success('Consulta finalizada', 'A consulta foi concluída com sucesso');
       setTimeout(() => navigate('/appointments'), 1500);
     } else {
-      toast.error('Erro ao finalizar', 'Não foi possível finalizar a consulta');
+      toast.error('Erro ao finalizar', 'Nêo foi possível finalizar a consulta');
     }
   };
 
@@ -319,7 +319,7 @@ export default function Consultation() {
                   : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
               }`}
             >
-              Prescrição
+              Prescriçêo
             </button>
             <button
               onClick={() => setActiveTab('historico')}
@@ -345,10 +345,10 @@ export default function Consultation() {
                   Sinais Vitais
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {/* Pressão Arterial */}
+                  {/* Pressêo Arterial */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
-                      Pressão Arterial (mmHg)
+                      Pressêo Arterial (mmHg)
                     </label>
                     <div className="flex items-center gap-2">
                       <input
@@ -424,7 +424,7 @@ export default function Consultation() {
                     />
                   </div>
 
-                  {/* Saturação */}
+                  {/* Saturaçêo */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">
                       <Droplet size={16} className="inline mr-1" />
@@ -531,10 +531,10 @@ export default function Consultation() {
                 </div>
               </div>
 
-              {/* Duração dos Sintomas */}
+              {/* Duraçêo dos Sintomas */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Duração dos Sintomas
+                  Duraçêo dos Sintomas
                 </label>
                 <input
                   type="text"
@@ -630,7 +630,7 @@ export default function Consultation() {
             </div>
           )}
 
-          {/* Tab: Prescrição */}
+          {/* Tab: Prescriçêo */}
           {activeTab === 'prescricao' && (
             <div className="space-y-4">
               <div className="flex items-center justify-between">
@@ -650,7 +650,7 @@ export default function Consultation() {
               {prescriptions.length === 0 ? (
                 <div className="text-center py-8 text-gray-500">
                   <Pill size={48} className="mx-auto mb-2 text-gray-400" />
-                  <p>Nenhuma prescrição adicionada</p>
+                  <p>Nenhuma prescriçêo adicionada</p>
                 </div>
               ) : (
                 <div className="space-y-4">
@@ -691,7 +691,7 @@ export default function Consultation() {
                         />
                         <input
                           type="text"
-                          placeholder="Duração (ex: 7 dias)"
+                          placeholder="Duraçêo (ex: 7 dias)"
                           value={prescription.duration || ''}
                           onChange={(e) => updatePrescription(index, 'duration', e.target.value)}
                           className="w-full px-3 py-2 border border-gray-300 rounded-lg"
