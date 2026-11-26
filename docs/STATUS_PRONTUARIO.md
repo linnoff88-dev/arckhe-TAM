@@ -466,5 +466,5 @@ Para integraçêo com backend real, será necessário apenas:
 ---
 
 **Última revisêo:** 2025-10-30
-**Desenvolvido por:** Claude Code + inematds
-**Repositório:** https://github.com/inematds/TAM
+**Desenvolvido por:** Claude Code + linnoff88-dev
+**Repositório:** https://github.com/linnoff88-dev/TAM
